@@ -1,0 +1,118 @@
+/*header{
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+    
+    
+
+    .navbar-brand:hover{
+        border-bottom: 5px solid #fff;
+    }
+    
+
+    .site-logo img{
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar-brand a.site-title{
+        color: #fff;
+        font-size: 34px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .navbar-brand a.site-title:hover{
+        color: #fff;
+        font-size: 34px;
+        font-weight: bold;
+        text-transform: capitalize;}
+        
+
+    
+    .menu--main{
+        background-color: yellow;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar > .container{
+    
+
+    .navbar-brand{
+       
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}*/
+
+
+header{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(197, 14, 14);
+    height: 110px;
+
+    .d-flex{
+        flex-direction: column;
+    }
+    .navbar > .container{
+        align-items: start;
+    }
+
+    .navbar-brand{
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+    }
+    .site-logo img{
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-brand a.site-title{
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .navbar-brand a.site-title:hover{
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: capitalize;}
+
+    .region-nav-main{
+        position: relative;
+        background-color: #fff;
+        height: 60px;
+        max-width: 1100px;
+    }
+    .region-nav-main::before{
+        content: '';
+        display: block;
+        max-width: 1100px;
+        z-index: 2;
+        height: 60px;
+        background-color: #fff;
+        position: absolute;
+    }
+}
+
+.nav_main{
+    .nav-item{
+        padding: 5px 20px;
+}
+}
+
+#block-bbc-main-navigation > ul > li > a{
+    color: #000;
+    font-weight: bold;
+
+}

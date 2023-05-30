@@ -1,0 +1,43 @@
+
+.news-item{
+    height: 250px;
+    margin-bottom: 30px;    
+
+   .views-field-field-image{
+    img{
+        width: 100%;
+
+    }
+   }
+
+   .views-field-title{
+        width: 100%;
+        text-align: justify;
+
+
+
+    a{  
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000;
+        text-decoration: none;
+    }
+    .views-field-field-time{
+
+        .field-content{
+        color: #7a7171; 
+        font-size: 14px;}
+    }
+
+   }
+}
+
+
+.news-item:hover{
+
+    .views-field-title{
+        text-decoration: underline;
+    }
+
+}
