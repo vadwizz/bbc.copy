@@ -1,4 +1,18 @@
 
+//так тут будуть стилі відображення видів
+
+
+
+// це відображення новин (
+.block-one{
+    display: flex;
+}
+
+
+.row{
+    margin-bottom: 40px;
+}
+
 .news-item{
     height: 250px;
     margin-bottom: 30px;    
@@ -40,4 +54,164 @@
         text-decoration: underline;
     }
 
+}
+
+.news-item:first-child{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//відображення останніх новин (ті що окремо винесені таблицею)
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.views-element-container > h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.table > :not(caption) > * > * {
+     padding: 0
+}
+
+.table > tbody > tr{
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    .image-the,
+    .views-field-field-video{
+        width: 100%;
+        padding-right: 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .views-field{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .views-field-title{
+        width: 100%;
+        text-align: justify;
+        a{
+            font-weight: bold;
+            font-size: 1.7rem;
+            line-height: 36px;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    .views-field-field-time{
+        color: #7a7171; 
+        font-size: 14px;
+    }
+    .views-field-body{
+        color: #242222;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+}
+
+.table > tbody > tr:hover{
+    .views-field-title{
+       
+        a{
+            text-decoration: underline;
+        }
+
+}}
+
+.item-list{
+    ol {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        margin-top: 20px;
+
+        li{
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+            
+        
+        }
+        li.list-item::marker{
+            font-size: 1.5rem;
+            color: rgb(197, 14, 14);
+        }
+        li:hover{
+            a{
+            text-decoration: underline;}
+        }
+    }
+    ul{
+        margin-top: 20px;
+        li{
+            margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 1.2rem;
+            
+            a{
+                color: #000;
+                text-decoration: none;
+
+            }
+            .views-field-field-time{
+                color: #7a7171; 
+                font-size: 14px;
+            }
+
+    }}
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .table > tbody > tr{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;}
+    
+
+    
 }

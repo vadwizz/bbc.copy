@@ -2,16 +2,19 @@ body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+
 #block-bbc-page-title > h1 {
 
     margin: 30px 0;
     width: 90%;
  span{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
 
 }}
 
+
+.block-field-blocknodenews-with-videofield-time,
 .block-field-blocknodenewsfield-time{
     margin-bottom: 30px;
     .field{
@@ -19,6 +22,9 @@ body{
     }
 }
 
+
+
+.block-layout-builder.block-field-blocknodenews-with-videofield-video,
 .block-field-blocknodenewsfield-image {
 
     margin-bottom: 30px;
@@ -28,15 +34,17 @@ body{
     height: auto;
 }}
 
+
+.block.block-layout-builder.block-field-blocknodenews-with-videobody,
 .block-field-blocknodenewsbody{
 
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     width: 90%;
     text-align: justify;
 
     p{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     strong{
@@ -70,3 +78,30 @@ body{
             }
         }
     
+
+
+
+
+        #block-views-block-latest-news-block-9 > div:nth-child(3) > div > div.view-content > div > ol{
+            display: block;
+            li{
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+
+        }
+
+
+@media screen and (max-width: 580px){
+    #block-bbc-page-title > h1 {
+
+        margin: 30px 0;
+        width: 90%;
+     span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    
+    }}
+    
+    
+}
